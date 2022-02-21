@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EjercicioHTML - Home</title>
+  </head>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Ejercicio HTML</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="#Home" class="active">Home</a>
+    <a href="#Nosotros">Nosotros</a>
+    <a href="#Formulario">Formulario</a>
+  </div>
+
+  <div class="row">
+    <div id="Nosotros" class="side">
+      <h2>Nosotros</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, eligendi? Impedit similique iure laudantium nostrum, voluptas nemo velit laboriosam molestias eveniet ipsam harum numquam architecto. Ducimus possimus reprehenderit eum ipsam?</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="side">
+      <h2>Sobre este Ejercicio</h2>
+      <p>Realizar un documento HTML con la estructura vista en clase y dar formato con CSS. Incluir un formulario para dar de alta usuarios, el mismo deberá de contener los campos: (Nombre Apellido Sexo Edad  y un boton enviar)</p>
+    </div>
+  </div>
+  <div class="row">
+    <div id="Formulario" class="side">
+      <h2>Formulario</h2>
+      <form action="" method="get" class="formulario" style="text-align: center;">
+        <fieldset>
+          <legend>Alta de Usuarios</legend>
+          <div class="row">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="row">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+          <div class="row">
+            <label for="edad">Edad</label>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            placeholder="Edad"
+            required
+          />  
+          </div>
+          <div class="row">           
+            <label for="sexo">Sexo</label>
+            <input type="radio" id="sexo_hombre" name="sexo" value="Hombre" />
+            <label for="sexo_hombre">Hombre</label>
+            <input type="radio" id="sexo_mujer" name="sexo" value="Mujer" />
+            <label for="sexo_mujer">Mujer</label>
+            <input
+              type="radio"
+              id="sexo_noBinario"
+              name="sexo"
+              value="noBinario"
+            />
+            <label for="sexo_noBinario">No Binario</label>
+          </div>
+          <div class="row">
+            <input type="submit" value="Enviar" style="margin-right: 1%;"/>
+            <input type="reset" value="Limpiar Campos" style="margin-left: 1%;" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Derechos de autor Reservados</p>
+  </div>
+
+</body>
